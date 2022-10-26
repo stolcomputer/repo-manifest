@@ -35,8 +35,8 @@
 
 	<!-- Stol -->
 		<remote name="stol"
-			fetch="ssh://git@github.com:stolcomputer" />
-		<project name="meta-stol-fmcc-rpi"
+			fetch="ssh://git@github.com" />
+		<project name="stolcomputer/meta-stol-fmcc-rpi"
 			remote="stol"
 			revision="dunfell"
 			path="sources/meta-stol-fmcc-rpi"/>
