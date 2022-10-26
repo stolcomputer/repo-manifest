@@ -34,10 +34,10 @@
            		path="sources/meta-qt5"/>
 
 	<!-- Stol -->
-		<remote name="stol"
+		<remote name="github-private"
 			fetch="ssh://git@github.com" />
 		<project name="stolcomputer/meta-stol-fmcc-rpi"
-			remote="stol"
+			remote="github-private"
 			revision="dunfell"
 			path="sources/meta-stol-fmcc-rpi"/>
 </manifest>
