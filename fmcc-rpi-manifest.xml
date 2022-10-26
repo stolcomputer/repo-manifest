@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+	<!-- Yocto -->
+  	<remote name="yocto"
+          	fetch="git://git.yoctoproject.org"/>
+  	<project name="poky"
+           	remote="yocto"
+           	revision="dunfell"
+           	path="sources/poky"/>
+
+	<!-- OpenEmbedded -->
+  		<remote name="oe"
+         		fetch="git://git.openembedded.org"/>
+  		<remote name="oe-mirror"
+          		fetch="https://github.com/openembedded"/>
+  		<project name="meta-openembedded"
+           		remote="oe"
+           		revision="dunfell"
+           		path="sources/meta-openembedded"/>
+
+	<!-- Raspberry Pi -->
+  		<project name="meta-raspberrypi"
+           		remote="yocto"
+           		revision="dunfell"
+           		path="sources/meta-raspberrypi"/>
+
+	<!-- Qt -->
+  		<remote name="qt"
+          		fetch="git://code.qt.io/yocto"
+          		pushurl="ssh://codereview.qt-project.org/yocto"/>
+  		<project name="meta-qt5"
+           		remote="qt"
+           		revision="72459ce0639eb3ce408558a7abede945e1f8ddc9"
+           		path="sources/meta-qt5"/>
+
+	<!-- Stol -->
+		<remote name="stol"
+			fetch="git://github.com/stolcomputer" />
+		<project name="meta-stol-fmcc"
+			remote="stol"
+			revision="dunfell"
+			path="sources/meta-stol-fmcc-rpi"/>
+</manifest>
