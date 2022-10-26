@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+	<!-- Yocto -->
+  	<remote name="yocto"
+          	fetch="git://git.yoctoproject.org"/>
+  	<project name="poky"
+           	remote="yocto"
+           	revision="dunfell"
+           	path="sources/poky"/>
+
+	<!-- OpenEmbedded -->
+  		<remote name="oe"
+         		fetch="git://git.openembedded.org"/>
+  		<remote name="oe-mirror"
+          		fetch="https://github.com/openembedded"/>
+  		<project name="meta-openembedded"
+           		remote="oe"
+           		revision="dunfell"
+           		path="sources/meta-openembedded"/>
+
+	<!-- Rockchip -->
+        <remote name="rockchip"
+         		fetch="https://github.com/JeffyCN"/>
+  		<project name="meta-rockchip"
+           		remote="rockchip"
+           		revision="dunfell"
+           		path="sources/meta-rockchip"/>
+
+    <!-- Engicam -->
+        <remote name="engicam"
+         		fetch="https://github.com/engicam-stable"/>
+  		<project name="meta-engicam-rockchip"
+           		remote="engicam"
+           		revision="dunfell"
+           		path="sources/meta-engicam-rockchip"/>
+
+	<!-- Qt -->
+  		<remote name="qt"
+          		fetch="git://code.qt.io/yocto"
+          		pushurl="ssh://codereview.qt-project.org/yocto"/>
+  		<project name="meta-qt5"
+           		remote="qt"
+           		revision="72459ce0639eb3ce408558a7abede945e1f8ddc9"
+           		path="sources/meta-qt5"/>
+
+	<!-- Stol -->
+		<remote name="github-private"
+			fetch="ssh://git@github.com" />
+		<project name="stolcomputer/meta-stol-fmcc-px30"
+			remote="github-private"
+			revision="dunfell"
+			path="sources/meta-stol-fmcc-px30"/>
+</manifest>
